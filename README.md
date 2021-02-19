@@ -14,7 +14,7 @@ Ensure the first four prerequisites are correctly installed on your system and r
 
 ## **Preamble:**
 
-There are many tuts online explaining how to get Socket.io working with NodeJS but few explaining how to do this with [Express Application Generator](https://expressjs.com/en/starter/generator.html).
+There are many tuts online explaining how to get Socket.io working with NodeJS but few explaining how to do this specifically with [Express Application Generator](https://expressjs.com/en/starter/generator.html).
 
 ---
 
@@ -83,5 +83,12 @@ Start the node app with `node bin/www` or `nodemon bin/www`.
 Load the app in the browser and examine the developer console.
 
 ![Express-Generator](img/a.5.png  'Express-generator')
+
+If you need to use the emiited `msg` in the page body, add two additional lines to the `index.ejs`.
+
+![](img/a.6.png)
+![](img/a.7.png)
+
+---
 
 This concludes the basic, minimal setup.
