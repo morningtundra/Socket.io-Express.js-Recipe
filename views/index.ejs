@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div id="myDiv"></div>
+    <!-- This is the minimum Client Socket.io Code -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      socket.on('message', (msg) => {
+        console.log(msg);
+        document.getElementById("myDiv").innerHTML=msg; 
+      })
+    </script>
+    <!-- ------------------------------------------ -->
+</body>
+</html>
